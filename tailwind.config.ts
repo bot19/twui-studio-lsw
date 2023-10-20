@@ -28,6 +28,14 @@ export default {
           { fontVariationSettings: '"wdth" 125' },
         ],
       },
+      colors: {
+        "brand": {
+          red: "#E84C57",
+          charcoal: "#231F20",
+          grey: "#3F4046",
+          white: "#FFFFFF",
+        },
+      }
     },
   },
   plugins: [],
