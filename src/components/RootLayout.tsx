@@ -80,11 +80,16 @@ function Header({
             filled={logoHovered}
           />
         </Link>
-        <div className="flex items-center gap-x-8">
+        <div className="flex items-center gap-x-4">
+          <Button href="#" invert={invert}>
+            About
+          </Button>
+
           <Button href="#" invert={invert}>
             Contact us
           </Button>
-          <button
+
+          {/* <button
             ref={toggleRef}
             type="button"
             onClick={onToggle}
@@ -104,7 +109,7 @@ function Header({
                   : 'fill-neutral-950 group-hover:fill-neutral-700',
               )}
             />
-          </button>
+          </button> */}
         </div>
       </div>
     </Container>
@@ -262,11 +267,16 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           layout
           className="relative isolate flex w-full flex-col pt-9"
         >
-          <GridPattern
+          {/* <GridPattern
             className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
             yOffset={-96}
             interactive
-          />
+          /> */}
+
+          <div
+            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_10%,transparent_60%)] bg-cover bg-top bg-no-repeat"
+            style={{ backgroundImage: "url(https://images.unsplash.com/photo-1559501388-3c4e43d3e711?auto=format&fit=crop&q=80&w=1982&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" }}>
+          </div>
 
           <main className="w-full flex-auto">{children}</main>
 
