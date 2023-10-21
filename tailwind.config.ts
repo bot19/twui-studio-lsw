@@ -35,6 +35,14 @@ export default {
           grey: "#3F4046",
           white: "#FFFFFF",
         },
+        'sup': {
+          red: '#E21F2D',
+          orange: '#E88F4C',
+          pink: '#E84CA5',
+          purple: '#8F4CE8',
+          blue: '#4C57E8',
+          green: '#A5E84C',
+        }
       }
     },
   },
