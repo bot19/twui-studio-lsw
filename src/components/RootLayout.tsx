@@ -274,7 +274,11 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           /> */}
 
           <div
-            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_10%,transparent_60%)] bg-cover bg-top bg-no-repeat"
+            className={clsx(
+              "absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full fill-neutral-50 stroke-neutral-950/5",
+              "[mask-image:linear-gradient(to_bottom_left,white_10%,transparent_60%)]",
+              "bg-cover bg-top"
+            )}
             style={{ backgroundImage: "url(https://images.unsplash.com/photo-1559501388-3c4e43d3e711?auto=format&fit=crop&q=80&w=1982&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" }}>
           </div>
 
