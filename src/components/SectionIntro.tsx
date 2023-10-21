@@ -2,6 +2,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
+import { HighLightWords } from '@/helpers'
 
 export function SectionIntro({
   title,
@@ -43,17 +44,17 @@ export function SectionIntro({
               smaller
                 ? 'text-2xl font-semibold'
                 : 'text-4xl font-medium sm:text-5xl',
-              invert ? 'text-white' : 'text-neutral-950',
+              invert ? 'text-white' : 'text-brand-charcoal',
             )}
           >
-            {title}
+            <HighLightWords fullText={title} highlightWords="brighter" />
           </span>
         </h2>
         {children && (
           <div
             className={clsx(
               'mt-6 text-xl',
-              invert ? 'text-neutral-300' : 'text-neutral-600',
+              invert ? 'text-neutral-300' : 'text-brand-grey',
             )}
           >
             {children}
