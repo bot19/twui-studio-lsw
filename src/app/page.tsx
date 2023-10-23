@@ -42,7 +42,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with <span className="text-brand-red">amazing</span> people
+            We’ve worked with amazing people
           </h2>
           <div className="h-px flex-auto bg-white opacity-30" />
         </FadeIn>
@@ -92,7 +92,7 @@ function CaseStudies({
                 "ring-brand-charcoal/30 hover:ring-transparent hover:bg-gradient-2",
                 "group"
               )}>
-                <h3>
+                {/* <h3>
                   <Link href={caseStudy.href}>
                     <span className="absolute inset-0 rounded-3xl" />
                     <Image
@@ -102,7 +102,7 @@ function CaseStudies({
                       unoptimized
                     />
                   </Link>
-                </h3>
+                </h3> */}
 
                 <p className={clsx(
                   "mt-6 flex gap-x-2 text-sm text-brand-charcoal",
@@ -135,13 +135,13 @@ function CaseStudies({
                   {caseStudy.title}
                 </p>
 
-                <p className={clsx(
+                {/* <p className={clsx(
                   "mt-4 text-base text-brand-grey",
                   "transition-all duration-300",
                   "group-hover:text-white"
                 )}>
                   {caseStudy.description}
-                </p>
+                </p> */}
               </article>
             </FadeIn>
           ))}
@@ -227,7 +227,7 @@ export default async function Home() {
 
       <Clients />
 
-      <CaseStudies caseStudies={caseStudies} />
+      <Services />
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
@@ -238,7 +238,7 @@ export default async function Home() {
         those annoying permission dialogs.
       </Testimonial>
 
-      <Services />
+      <CaseStudies caseStudies={caseStudies} />
 
       <ContactSection />
     </>
