@@ -2,10 +2,14 @@ import React from 'react'
 
 interface IHighlightWords {
   fullText: string;
-  highlightWords: string;
+  highlightWords?: string;
 }
 
 export const HighLightWords = (props: IHighlightWords) => {
+  if (!props.highlightWords) {
+    return props.fullText;
+  }
+
   const indexOfHighlight = props.fullText.indexOf(props.highlightWords);
   const lengthOfHighlight = props.highlightWords.length;
 

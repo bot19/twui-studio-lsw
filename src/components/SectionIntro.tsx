@@ -6,6 +6,7 @@ import { HighLightWords } from '@/helpers'
 
 export function SectionIntro({
   title,
+  highlightWords,
   eyebrow,
   children,
   smaller = false,
@@ -16,6 +17,7 @@ export function SectionIntro({
   'title' | 'children'
 > & {
   title: string
+  highlightWords?: string
   eyebrow?: string
   children?: React.ReactNode
   smaller?: boolean
@@ -30,7 +32,7 @@ export function SectionIntro({
               <span
                 className={clsx(
                   'mb-6 block font-display text-base font-semibold',
-                  invert ? 'text-white' : 'text-neutral-950',
+                  invert ? 'text-white' : 'text-brand-charcoal',
                 )}
               >
                 {eyebrow}
@@ -47,7 +49,7 @@ export function SectionIntro({
               invert ? 'text-white' : 'text-brand-charcoal',
             )}
           >
-            <HighLightWords fullText={title} highlightWords="brighter" />
+            <HighLightWords fullText={title} highlightWords={highlightWords} />
           </span>
         </h2>
         {children && (

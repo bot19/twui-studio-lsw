@@ -1,6 +1,6 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
+// import Link from 'next/link'
 import clsx from 'clsx'
 
 import { ContactSection } from '@/components/ContactSection'
@@ -74,6 +74,7 @@ function CaseStudies({
     <>
       <SectionIntro
         title="Harnessing technology for a brighter future"
+        highlightWords='brighter'
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
@@ -87,9 +88,11 @@ function CaseStudies({
           {caseStudies.map((caseStudy) => (
             <FadeIn key={caseStudy.href} className="flex">
               <article className={clsx(
-                "relative flex w-full flex-col rounded-3xl p-6 ring-1 sm:p-8",
+                "relative flex w-full flex-col rounded-3xl",
+                "p-6 sm:p-8 !pt-0",
                 "transition-all duration-300",
-                "ring-brand-charcoal/30 hover:ring-transparent hover:bg-gradient-2",
+                // "ring-1 ring-brand-charcoal/30 hover:ring-brand-red",
+                "bg-brand-charcoal/5 hover:bg-gradient-2",
                 "group"
               )}>
                 {/* <h3>
@@ -103,6 +106,14 @@ function CaseStudies({
                     />
                   </Link>
                 </h3> */}
+
+                <div className={clsx(
+                  "-mx-6 -mt-[1px] sm:-mx-8",
+                  "overflow-hidden rounded-t-3xl",
+                  "grayscale-[66%] group-hover:grayscale-0"
+                )}>
+                  <Image src={caseStudy.imageCard.src} alt="test" unoptimized />
+                </div>
 
                 <p className={clsx(
                   "mt-6 flex gap-x-2 text-sm text-brand-charcoal",
@@ -157,6 +168,7 @@ function Services() {
       <SectionIntro
         eyebrow="Services"
         title="We help you identify, explore and respond to new opportunities."
+        highlightWords='respond'
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
