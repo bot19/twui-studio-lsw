@@ -19,7 +19,7 @@ import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.sv
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import imageLaptop from '@/images/laptop.jpg'
+import imageServices from '@/images/new/image-services.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
@@ -112,7 +112,7 @@ function CaseStudies({
                   "overflow-hidden rounded-t-3xl",
                   "grayscale-[66%] group-hover:grayscale-0"
                 )}>
-                  <Image src={caseStudy.imageCard.src} alt="test" unoptimized />
+                  <Image src={caseStudy.imageCard.src} alt="Alt text should come from .mdx data" unoptimized />
                 </div>
 
                 <p className={clsx(
@@ -176,9 +176,10 @@ function Services() {
           old projects — we can come up with an endless number of those.
         </p>
       </SectionIntro>
+      
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
+          {/*<div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
                 src={imageLaptop}
@@ -186,7 +187,19 @@ function Services() {
                 className="justify-center lg:justify-end"
               />
             </FadeIn>
+          </div> */}
+
+          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
+            <FadeIn className="w-[33.75rem] flex-none lg:w-[40rem]">
+              <div className={clsx(
+                "rounded-4xl overflow-hidden",
+                "grayscale-[75%] hover:grayscale-0"
+              )}>
+                <Image src={imageServices} alt="Alt text" unoptimized />
+              </div>
+            </FadeIn>
           </div>
+
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Web development">
               We specialise in crafting beautiful, high quality marketing pages.

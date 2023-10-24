@@ -1,8 +1,10 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
+// import { Offices } from '@/components/Offices'
 import clsx from 'clsx'
+import Image from 'next/image'
+import imageSendMail from '@/images/new/send-mail.svg'
 
 export function ContactSection() {
   return (
@@ -10,7 +12,8 @@ export function ContactSection() {
       <FadeIn className={clsx(
         "-mx-6 rounded-4xl px-6 py-20 sm:mx-0 sm:py-32 md:px-12",
         "bg-gradient-2",
-        "relative"
+        "relative",
+        "overflow-hidden"
       )}>
         <div className="mx-auto max-w-4xl">
           <div className="max-w-xl">
@@ -25,13 +28,13 @@ export function ContactSection() {
             </div>
 
             <div className={clsx(
-              "aspect-square",
               "absolute",
-              "text-[8rem] sm:text-[10rem]",
-              "bottom-6 sm:bottom-10",
-              "right-6 sm:right-10"
+              "-bottom-[96px]",
+              "-right-[275px] md:-right-[250px]",
+              "w-[608px]",
+              "opacity-0 sm:opacity-100 transition-opacity duration-300"
             )}>
-              <div className="h-full translate-y-1/2">🚀</div>
+              <Image src={imageSendMail} alt="Man sending mail" unoptimized />
             </div>
 
             {/* <div className="mt-10 border-t border-white/10 pt-10">
