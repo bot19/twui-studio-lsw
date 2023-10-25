@@ -3,7 +3,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { GridPattern } from '@/components/GridPattern'
+// import { GridPattern } from '@/components/GridPattern'
 
 export function Testimonial({
   children,
