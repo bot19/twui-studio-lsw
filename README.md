@@ -1,32 +1,34 @@
-# Studio
+# Little Shovels website
+
+[Little Shovels](https://littleshovels.com/) needed a new website up quick, so we picked a Tailwind UI template ("Studio") and mofified it to our needs.
 
 Studio is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
-## Getting started
+![Template preview](static/preview.gif)
 
-To get started with this template, first install the npm dependencies:
+## 🏁 Features/objectives
 
-```bash
-npm install
-```
+1. A modern and optimised website
+2. Tweak the design slightly to personalise it to LS
+3. Updated to LS' content &amp; feature requirements
+4. Have it up yesterday!
 
-Next, run the development server:
+## 🖥️ Tech
 
-```bash
-npm run dev
-```
+1. Next.js `v13.4`
+2. React `v18.2`
+3. Tailwind CSS `v3.3`
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+## 🚀 How to run
 
-## Customizing
+1. Fork &amp; clone this repo
+2. Make sure you have Node `v18` (or newer),
+3. Get `yarn` or `npm`
+4. in terminal go to DIR &amp; run `yarn` or `npm install`
+5. On successful installation, run `yarn dev` or `npm run dev`
+6. Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
+## 📝 Notes
 
 To learn more about the technologies used in this site template, see the following resources:
 
